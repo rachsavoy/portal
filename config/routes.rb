@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'messages/create'
   get 'chatroom/show'
   # get 'onboarding/index'
   # get 'onboarding/show'
