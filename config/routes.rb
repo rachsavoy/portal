@@ -18,7 +18,4 @@ end
 
   resources :onboardings, only [:index, :show, ]
 end
-
-
-  end
 end
