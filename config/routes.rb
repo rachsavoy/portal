@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'chatroom/show'
   # get 'onboarding/index'
   # get 'onboarding/show'
   # get 'onboarding/edit'
@@ -12,10 +13,4 @@ Rails.application.routes.draw do
   # get 'profile/update'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: 'pages#home'
-  get '/dashboard', to: 'pages#dashboard'
-  resources :profiles, only: [:index, :show, :edit, :destroy]
-end
-
-  resources :onboardings, only [:index, :show, ]
-end
 end
