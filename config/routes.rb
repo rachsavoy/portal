@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'checklist/show'
+  get 'checklist/edit'
+  get 'checklist/index'
+  get 'checklist/update'
+  get 'checklist/destroy'
   get 'messages/create'
   get 'chatroom/show'
   # get 'onboarding/index'
