@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'list/index'
+  get 'list/show'
+  get 'list/create'
+  get 'list/edit'
+  get 'list/destroy'
   get 'checklist/show'
   get 'checklist/edit'
   get 'checklist/index'
