@@ -24,6 +24,10 @@ class ProfileController < ApplicationController
   end
 
   def destroy
+    @profile = Profile.find(params[:id])
+    @user = @profile.user
+    @profile.destroy
+    redirect_to dashboard_path
   end
 
   def edit

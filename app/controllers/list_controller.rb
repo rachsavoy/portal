@@ -26,6 +26,10 @@ class ListController < ApplicationController
   end
 
   def destroy
+    @list = List.find(params[:id])
+    @user = @list.user
+    @list.destroy
+    redirect_to dashboard_path
   end
 
   private

@@ -9,6 +9,10 @@ class TaskController < ApplicationController
   end
 
   def destroy
+    @task = Task.find(params[:id])
+    @user = @Task.user
+    @task.destroy
+    redirect_to dashboard_path
   end
 
   def create
