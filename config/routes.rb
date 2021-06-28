@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   # get 'onboarding/show'
   # get 'onboarding/edit'
   # get 'onboarding/destroy'
-  #get 'profile/index'
+  # get 'profile/index'
   # get 'profile/show'
   # get 'profile/view'
   # get 'profile/create'
