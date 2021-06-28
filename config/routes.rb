@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'task/index'
+  get 'task/show'
+  get 'task/edit'
+  get 'task/destroy'
+  get 'task/create'
   get 'list/index'
   get 'list/show'
   get 'list/create'
@@ -36,6 +41,6 @@ Rails.application.routes.draw do
   # resources :checklists
 
    # resources :chatrooms, only: :show do
-     #resources :messages, only: :create
+     # resources :messages, only: :create
    # end
 end
