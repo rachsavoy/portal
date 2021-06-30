@@ -1,0 +1,58 @@
+.btn-ghost {
+  color: #013878;
+  border: 1px solid #D2ab67;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+.btn-flat {
+  color: #ffff;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #013878;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #001A7E;
+  color: white;
+}
+
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#013878, #001A7E);
+  transition: background 0.3s ease;
+  border: 1px solid #D2ab67;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#013878, #001A7E);
+  color: white;
+}
+
+
+
+  .portal-sign-in .btn-flat {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 0.875rem;
+    background-color: #;
+    color: #013878;
+    text-align: center;
+    transition: background 0.3s ease;
+    }
+
+   .portal-sign-in .btn-flat:hover {
+        background-color: #013878;
+        color: #D2ab67;
+      }

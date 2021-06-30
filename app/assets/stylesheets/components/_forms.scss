@@ -1,0 +1,42 @@
+.form-page-background {
+  margin-top: 60px;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://unsplash.com/photos/Nyvq2juw4_o');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-background {
+  background: linear-gradient(#ffffffa6, #ffffff94);
+  border-radius: 20px;
+}
+
+.form-partial-button {
+  border-radius: 10px;
+  background: linear-gradient(#cabcac, #e8e6dfc4);
+
+  &:hover {
+    background: linear-gradient(#3e1922d1, #564348d1);
+    transition: 2s;
+  }
+}
+
+.form-inputs {
+  color: #D2ab67;
+  border-radius: 5px;
+  box-shadow: 9px 11px 2px 2px rgba(0,0,0,0.58);
+
+}
+
+.assigned-form {
+  width: 20%;
+
+}
+
+.unavailable-card {
+  border-radius: 20px;
+  background-color: $baby-powder;
+  padding: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
