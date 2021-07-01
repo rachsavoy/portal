@@ -6,7 +6,7 @@ development:
   encoding: unicode
   database: portal_development
   pool: 5
-  username: portal
+  username: rachaelhakim
   password: Andrew1115
   host: localhost
 
@@ -18,7 +18,7 @@ test:
   encoding: unicode
   database: portal_test
   pool: 5
-  username: portal
+  username: rachaelhakim
   password: Andrew1115
   host: localhost
 
@@ -27,6 +27,6 @@ production:
   encoding: unicode
   database: portal_production
   pool: 5
-  username: portal
+  username: rachaelhakim
   password: Andrew1115
   host: localhost

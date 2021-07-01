@@ -271,7 +271,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.3)
   noticed (~> 1.2)
-  pg (>= 0.18, < 2.0)
+  pg
   pry-byebug
   pry-rails
   puma (~> 5.0)
