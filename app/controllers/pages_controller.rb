@@ -10,4 +10,13 @@ class PagesController < ApplicationController
   def faq
     render
   end
+
+  def training
+    render
+  end
+
+  def info
+    render
+  end
+
 end

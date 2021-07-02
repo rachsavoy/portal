@@ -29,7 +29,9 @@ Rails.application.routes.draw do
   get 'profile/edit'
   get 'profile/update'
   # other routes
-  get "/faq", to: "pages#faq", as: :faq_page
+  PagesController.action_methods.each do |action|
+    get "/#{action}", to: "pages##{action}", as: "#{action}_page"
+  end
 
   root :to => "pages#redirect_to_sign_up"
 
