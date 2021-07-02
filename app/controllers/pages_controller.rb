@@ -19,4 +19,8 @@ class PagesController < ApplicationController
     render
   end
 
+  def benefits
+    render
+  end
+
 end
