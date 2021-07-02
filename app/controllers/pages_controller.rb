@@ -6,4 +6,8 @@ class PagesController < ApplicationController
       redirect_to home_path
     end
   end
+
+  def faq
+    render
+  end
 end
