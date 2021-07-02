@@ -1,65 +1,43 @@
-<html>
-
-<head>
-
-    <title>Navbar</title>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
-  <!--Navbar-->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <!-- Navbar-->
-
-  <!-- Font styles -->
-  <style type="text/css">
-      @import "http://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
-    @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
-      @import "https://daneden.github.io/animate.css/animate.min.css";
-  </style>
-
-</head>
-<body style="background-color: #D2AB67";>
-
-  <!--Navigation bar-->
-
-  <nav class="navbar navbar-inverse" role="navigation">
-
+<!--Navigation bar-->
+<nav class="navbar navbar-inverse" role="navigation">
   <div class="navbar-inner">
-
     <!--Container class div-->
     <div class="container-fluid">
-
       <div class="navbar-header">
-
         <a class="navbar-brand" href="www.parlatorelawgroup.com">
-          <img src="logo.jpg" alt="">
+          <img src="logo.jpg" alt="Paralatore Law Group">
         </a>
       </div>
-
       <div class="collapse navbar-collapse" id="mainNavBar">
         <ul class="nav navbar-nav navbar-left">
-
-          <li><a href="#"> </a></li> <!-- TO leave some space after logo-->
-          <li><i class="fab fa-earlybirds"></i> </li>
-          <li class="active"><a href="Chatroom#">Messages </a></li>
-
-          <li class = "dropdown">
-            <a href = "#" class="dropdown-toggle" data-toggle = "dropdown"> User <span class = "caret"></span><i class="fas fa-video"></i></a>
-            <ul class = "dropdown-menu">
-              <li><a href="#">Profile Picture</a><i class="fas fa-video"></i></li>
-              <li class="nav-divider"></li><li><a href="#">Sign Out</a></li>
-            </ul>
+          <li class="nav-item">
+            <div class="dropdown messages-dropdown">
+              <%= link_to "Messages", chatroom_path(current_user.team.chatroom_id), method: :get, remote: true, class: "nav-link mr-2 dropdown-toggle" , id: "navbarMessagesDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <div class="dropdown-menu messages-dropdown-menu dropdown-menu-right" aria-labelledby="navbarMessagesDropdown">
+              <%= render partial: 'chatrooms/chatroom', locals: { chatroom: chatroom, message: message }   %>
+            </div>
+            </div>
           </li>
+          <li class="nav-item dropdown">
+          <% if current_user.photo.attached? %>
+            <%= image_tag current_user.photo,  class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <% else %>
+            <%= cl_image_tag "avatar_icon.png",  class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <% end %>
+
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            </div>
+          </li>
+          <% else %>
+            <li class="nav-item">
+              <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+            </li>
+          <% end %>
         </ul>
 
-
-        <!-- Right hand side navbar -->
-        <ul class ="nav navbar-nav navbar-left">
+        <!-- Left hand side navbar -->
+        <ul class ="nav navbar-nav navbar-left" style= background-color: #D2AB67;>
           <li><a href="checklist#view">Checklist</a></li>
           <li><i class="fas fa-clipboard-list"></i></li>
           <li><a href="forms#view">Forms</a></li>
@@ -79,8 +57,4 @@
   </nav>
   <!--Navbar End-->
 
-
-</body>
-
-</html>
 
