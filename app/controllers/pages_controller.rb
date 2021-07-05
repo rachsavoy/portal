@@ -30,4 +30,8 @@ class PagesController < ApplicationController
   def training
     render
   end
+
+  def documents
+    render
+  end
 end
