@@ -34,4 +34,8 @@ class PagesController < ApplicationController
   def documents
     render
   end
+
+  def resources
+    render
+  end
 end
