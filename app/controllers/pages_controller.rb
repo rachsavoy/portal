@@ -22,7 +22,12 @@ class PagesController < ApplicationController
   def benefits
     render
   end
+
   def who
+    render
+  end
+
+  def training
     render
   end
 end
