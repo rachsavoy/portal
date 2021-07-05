@@ -22,5 +22,7 @@ class PagesController < ApplicationController
   def benefits
     render
   end
-
+  def who
+    render
+  end
 end
