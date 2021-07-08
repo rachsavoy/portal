@@ -65,3 +65,14 @@ h1 {
   height: 15vw;
   object-fit: cover;
 }
+
+.resource-card {
+  background-color: #ffff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #013878;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  width: 269px;
+  height: 344px;
+}
