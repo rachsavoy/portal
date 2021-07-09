@@ -7,3 +7,40 @@
   background-size: cover;
   width: 100%;
 }
+
+.scroll-touch {
+  overflow: auto;
+  height: 200px;
+  background-color: #C4c4c4;
+  opacity: 50%;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #111;
+  border-width: 3px;
+  font-size: 24px;
+}
+
+.messages-show {
+  margin: auto;
+  width: 100%;
+
+  h1{
+    color: #111;
+  }
+}
+
+
+.messages-dropdown {
+  padding: 0;
+  width: 100%;
+}
+
+.messages-dropdown-menu {
+  padding: 0;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.message-container {
+  line-height: 1;
+}
