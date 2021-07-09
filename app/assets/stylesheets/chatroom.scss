@@ -1,3 +1,9 @@
 // Place all the styles related to the Chatroom controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.chatroom {
+  background-image: linear-gradient( to top, rgba(210, 171, 103, 0) @89.58%), url('https://unsplash.com/photos/FJVPH7x4ySs');
+  background-size: cover;
+  width: 100%;
+}
