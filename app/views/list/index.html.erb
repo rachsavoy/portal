@@ -43,8 +43,8 @@
       <button class="list-card-btn">add</button>
     </div>
     <div class= "list-card">
-      <img src="http://api.linkedin.com/v1/people/{user-id}/picture-url" alt="support staff">
-      <h2></h2>
+      <img src="http://api.linkedin.com/v1/people/{<%=current.user%>}/picture-url" alt="support staff">
+      <h2><%=current.user%></h2>
       <button class="list-card-btn">view</button>
       <button class="list-card-btn">add</button>
     </div>
