@@ -1,46 +1,58 @@
 # List#index
 # Find me in app/views/list/index.html.erb
 # Each support staff to do list
-
-<div class="card-container">
-  <div class= "list-card">
-    <img src="http://api.linkedin.com/v1/people/jennifer-crawford-aa8117140/picture-url" alt="support staff">
-    <button class="list-card-btn">view</button>
-    <button class="list-card-btn">add</button>
-  </div>
-  <div class= "list-card">
-    <img src="http://api.linkedin.com/v1/people/lauren-lee-57021b7a/picture-url" alt="support staff">
-    <button class="list-card-btn">view</button>
-    <button class="list-card-btn">add</button>
-  </div>
-  <div class= "list-card">
-    <img src="http://api.linkedin.com/v1/people/kaliaguheen/picture-url" alt="support staff">
-    <button class="list-card-btn">view</button>
-    <button class="list-card-btn">add</button>
-  </div>
-  <div class= "list-card">
-    <img src="http://api.linkedin.com/v1/people/laurel-sceviour-7812a21b/picture-url" alt="support staff">
-    <button class="list-card-btn">view</button>
-    <button class="list-card-btn">add</button>
-  </div>
-  <div class= "list-card">
-    <img src="http://api.linkedin.com/v1/people/savoyrachael/picture-url" alt="support staff">
-    <button class="list-card-btn">view</button>
-    <button class="list-card-btn">add</button>
-  </div>
-  <div class= "list-card">
-    <img src="http://api.linkedin.com/v1/people/kristynatorrescruz/picture-url" alt="support staff">
-    <button class="list-card-btn">view</button>
-    <button class="list-card-btn">add</button>
-  </div>
-  <div class= "list-card">
-    <img src="http://api.linkedin.com/v1/people/{user-id}/picture-url" alt="support staff">
-    <button class="list-card-btn">view</button>
-    <button class="list-card-btn">add</button>
-  </div>
-  <div class= "list-card">
-    <img src="http://api.linkedin.com/v1/people/{user-id}/picture-url" alt="support staff">
-    <button class="list-card-btn">view</button>
-    <button class="list-card-btn">add</button>
+<div class="support-staff">
+  <%= render 'shared/navbar' %>
+  <%= render 'shared/header' %>
+  <div class="card-container">
+    <h1> To Do Lists: </h1>
+    <div class= "list-card">
+      <img src="http://api.linkedin.com/v1/people/jennifer-crawford-aa8117140/picture-url" alt="support staff">
+      <h2>Jennifer Crawford</h2>
+      <button class="list-card-btn">view</button>
+      <button class="list-card-btn">add</button>
+    </div>
+    <div class= "list-card">
+      <img src="http://api.linkedin.com/v1/people/lauren-lee-57021b7a/picture-url" alt="support staff">
+      <h2>Lauren Lee</h2>
+      <button class="list-card-btn">view</button>
+      <button class="list-card-btn">add</button>
+    </div>
+    <div class= "list-card">
+      <img src="http://api.linkedin.com/v1/people/kaliaguheen/picture-url" alt="support staff">
+      <h2>Kalia Guheen</h2>
+      <button class="list-card-btn">view</button>
+      <button class="list-card-btn">add</button>
+    </div>
+    <div class= "list-card">
+      <img src="http://api.linkedin.com/v1/people/laurel-sceviour-7812a21b/picture-url" alt="support staff">
+      <h2>Laurel Sceviour</h2>
+      <button class="list-card-btn">view</button>
+      <button class="list-card-btn">add</button>
+    </div>
+    <div class= "list-card">
+      <img src="http://api.linkedin.com/v1/people/savoyrachael/picture-url" alt="support staff">
+      <h2>Rachael Savoy</h2>
+      <button class="list-card-btn">view</button>
+      <button class="list-card-btn">add</button>
+    </div>
+    <div class= "list-card">
+      <img src="http://api.linkedin.com/v1/people/kristynatorrescruz/picture-url" alt="support staff">
+      <h2>Kristyna Cruz</h2>
+      <button class="list-card-btn">view</button>
+      <button class="list-card-btn">add</button>
+    </div>
+    <div class= "list-card">
+      <img src="http://api.linkedin.com/v1/people/{user-id}/picture-url" alt="support staff">
+      <h2></h2>
+      <button class="list-card-btn">view</button>
+      <button class="list-card-btn">add</button>
+    </div>
+    <div class= "list-card">
+      <img src="http://api.linkedin.com/v1/people/{user-id}/picture-url" alt="support staff">
+      <h2></h2>
+      <button class="list-card-btn">view</button>
+      <button class="list-card-btn">add</button>
+    </div>
   </div>
 </div>
