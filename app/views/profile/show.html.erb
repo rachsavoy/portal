@@ -1,2 +1,41 @@
 # Profile#show
 # Find me in app/views/profile/show.html.erb
+
+<%= render 'profile' %>
+<%= render 'shared/header' %>
+<%= render 'shared/navbar' %>
+
+<div class="my-4 pb-3">
+
+  <div class="mb-5 profile-show">
+    <div class="d-flex align-items-center pt-5">
+      <%= link_to profile_path(@profile.id.to_i - 1), class: "mr-5" do %><i class="fas fa-reply"></i><% end %>
+
+      <div class="profile-show-card">
+        <div class="profile-show-content">
+          <h1 class = "card-title"><%= @profile.first_name %> <%= @profile.last_name %></h1>
+          <div class="d-flex mb-5">
+            <div>
+              <%= image_tag @profile.photo, class: "card-img-top" %>
+            </div>
+            <div>
+              <p> <strong class="profile-show-info"></strong></p>
+              <p> <strong class="profile-show-info"></strong></p>
+              <p> <strong class="profile-show-info"></strong></p>
+              <div class="d-flex">
+                <p><strong class="profile-show-info"></strong></p>
+                <p> <strong class="profile-show-info"></strong></p>
+                <p> <strong class="profile-show-info"></strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

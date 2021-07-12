@@ -1,0 +1,47 @@
+.profile-show {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+
+  a {
+    color: #d2ab67;
+  }
+
+  img {
+    border: 4px #c4c4c4 solid;
+    width: 200px;
+    margin-right: 20px;
+  }
+
+  h1, a {
+    font-size: 70px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #c4c4c4;
+    margin-bottom: 0.2rem;
+  }
+
+  .btn {
+    background-color: #d2ab67;
+    color: #013878;
+  }
+}
+
+.profile-show-info {
+  font-size: 20px;
+}
+
+
+.profile-show-card {
+  width: 1000px;
+  height: 346px;
+  overflow: auto;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 4px;
+  background-color: #013878;
+  padding: 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
