@@ -1,11 +1,16 @@
 # Profile#index
 # Find me in app/views/profile/index.html.erb
 
+<%= render 'profile' %>
+<%= render 'shared/header' %>
+<%= render 'shared/navbar' %>
+<%= render 'shared/search' %>
+
 <div class="card-container">
-  <div class="profile-card">
+  <div class="profile">
     <tbody>
       <% @profiles.each do |profile| %>
-        <tr class="recruit-table-content table-danger">
+        <tr class="profile-card">
           <%= link_to profile_path(profile.user) do %>
             <td>
               <%= image_tag profile.user.photo, class: 'avatar-small' %>
