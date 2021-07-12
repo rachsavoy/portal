@@ -11,7 +11,7 @@
     <tbody>
       <% @profiles.each do |profile| %>
         <tr class="profile-card">
-          <%= link_to profile_path(profile.user) do %>
+          <%= link_to profile_path(profile.show) do %>
             <td>
               <%= image_tag profile.user.photo, class: 'avatar-small' %>
               <%= profile.user.first_name %> <%= profile.user.last_name %>
