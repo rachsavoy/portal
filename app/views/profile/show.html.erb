@@ -10,6 +10,11 @@
   <div class="mb-5 profile-show">
     <div class="d-flex align-items-center pt-5">
       <%= link_to profile_path(@profile.id.to_i - 1), class: "mr-5" do %><i class="fas fa-reply"></i><% end %>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-youtube-square"></i>
+      <i class="fab fa-twitter-square"></i>
 
       <div class="profile-show-card">
         <div class="profile-show-content">
@@ -19,9 +24,9 @@
               <%= image_tag @profile.photo, class: "card-img-top" %>
             </div>
             <div>
-              <p> <strong class="profile-show-info"></strong></p>
-              <p> <strong class="profile-show-info"></strong></p>
-              <p> <strong class="profile-show-info"></strong></p>
+              <p>Education <strong class="profile-show-info"></strong></p>
+              <p> Practice Areas<strong class="profile-show-info"></strong></p>
+              <p> Licences <strong class="profile-show-info"></strong></p>
               <div class="d-flex">
                 <p><strong class="profile-show-info"></strong></p>
                 <p> <strong class="profile-show-info"></strong></p>
