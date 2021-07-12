@@ -3,7 +3,23 @@
 
 <div class="card-container">
   <div class="profile-card">
-    <img src="" alt="">
-    <h4> <%= profile.first_name %> <%= profile.last_name %> </h4>
+    <tbody>
+      <% @profiles.each do |profile| %>
+        <tr class="recruit-table-content table-danger">
+          <%= link_to profile_path(profile.user) do %>
+            <td>
+              <%= image_tag profile.user.photo, class: 'avatar-small' %>
+              <%= profile.user.first_name %> <%= profile.user.last_name %>
+            </td>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
   </div>
 </div>
+
+
+
+
+
+
