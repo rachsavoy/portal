@@ -34,3 +34,53 @@
   height: auto;
   box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
 }
+
+.mission-card {
+  background-color: #111;
+  color: #d2ab67;
+  width: 679px;
+  height: auto;
+  box-shadow: 10px, 10px rgba(0, 0, 0, 0.5)
+  font-family: lato;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.mission-card h1 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 800;
+  font-style: underline;
+}
+
+.vision-card {
+  background-color: #d2ab67;
+  color: #fff;
+  width: 504px;
+  height: 872px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+  font-family: lato;
+  line-height: 50px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.vision-card h1 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 800;
+  font-style: underline;
+}
+
+.about-card {
+  background-color: #c4c4c4;
+  color: #111;
+  width: 504px;
+  height: 872px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+  font-family: lato;
+  line-height: 50px;
+  font-size: 26px;
+  font-weight: 400;
+}
