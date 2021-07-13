@@ -1,6 +1,21 @@
 # Onboarding#index
 # Find me in app/views/onboarding/index.html.erb
-
-
 #This page is for admin only to see each employee onboarding process.
 
+<%= render 'shared/header' %>
+<%= render 'shared/navbar' %>
+
+<div class= card-container>
+  <h1>ONBOARDING PROCESS</h1>
+  <div class= onboard-card>
+    <% @profiles.each do |profile| %>
+      <%=profile.photo%>
+      <%=profile.first_name%> <%=profile.last_name%>
+    <%= end %>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+        40%
+      </div>
+    </div>
+  </div>
+</div>
