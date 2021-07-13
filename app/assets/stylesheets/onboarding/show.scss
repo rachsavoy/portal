@@ -1,0 +1,36 @@
+.onboarding {
+  background-image: url(https://unsplash.com/photos/FIKD9t5_5zQ);
+}
+
+.onboarding-card {
+  width: 605px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #013878;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  text-align: right;
+  color: #d2ab67;
+}
+
+.to-do-card {
+  width: 745px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #013878;
+  color: #d2ab67;
+  box-shadow: 10px, 10px rgba(0, 0, 0, 0.25);
+}
+
+.process-card {
+  border-radius: 50%;
+  border-width: 8px;
+  border-color: #d2ab67;
+  border-style: solid;
+  background-color: #FFF;
+  color: #111;
+  width: 396;
+  height: auto;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+}
