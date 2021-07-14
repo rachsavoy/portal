@@ -17,4 +17,14 @@ class TaskController < ApplicationController
 
   def create
   end
+
+  private
+
+  def task_params
+    params.require(:task).permit(:content, :users)
+  end
+
+  def authorize_task
+    authorize @task
+  end
 end
