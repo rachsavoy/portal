@@ -8,16 +8,40 @@
         <h5 class="card-title">Blog Form</h5>
         <p class="card-text"></p>
       </div>
-    <form>
-      <label>Subject Matter: </label>
-      <input type="text"></input>
-      <label>Keywords:</label>
-      <input type="text"></input>
-      <label>Target Audience:</label>
-      <input type="text"></input>
-      <label> Target Location(s):</label>
-      <input type="text"></input>
-      <input type="submit" value="Submit">
+
+    <form class="needs-validation" novalidate>
+      <div class="alert alert-danger d-none">Please review the problems below:</div>
+
+      <div class="mb-3">
+        <label for="exampleInputName" class="form-label">Subject Matter: </label>
+        <input type="text" class="form-control" id="exampleInputSubject" placeholder="Subject" required>
+        <div class="invalid-feedback">Subject Matter can't be blank.</div>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputName" class="form-label">Keywords:</label>
+        <input type="text" class="form-control" id="exampleInputKeyword" placeholder="Keywords" required>
+        <div class="invalid-feedback">Keywords can't be blank</div>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputName" class="form-label">Target Audience:</label>
+        <input type="text" class="form-control" id="exampleInputAudience" placeholder="Audience" required>
+        <div class="invalid-feedback">Target Audience can't be blank</div>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputName" class="form-label"> Target Location(s):</label>
+        <input type="text" class="form-control" id="exampleInputLocation" placeholder="Location(s)" required>
+        <div class="invalid-feedback">Target Location(s) can't be blank</div>
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-outline-secondary">Cancel</button>
     </form>
   </div>
 </div>
