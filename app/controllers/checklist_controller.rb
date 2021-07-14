@@ -11,7 +11,7 @@ class ChecklistController < ApplicationController
   end
 
   def index
-    @checklists = policy_scope(Event).order(created_at: :desc)
+    @checklists = policy_scope(checklist).order(created_at: :desc)
   end
 
   def update
